@@ -12,5 +12,20 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        for (int i = 100; i < 1000; i++) {
+            if (isNarcissisticNumber(i)) System.out.println(i);
+        }
+    }
+
+    public static boolean isNarcissisticNumber(int number) {
+        int hundreds = number / 100;
+        int decade = (number % 100) / 10;
+        int unit = (number % 100) % 10;
+        int sum = (int) (Math.pow(hundreds, 3) + Math.pow(decade, 3) + Math.pow(unit, 3));
+
+        if (sum == number) {
+            return true;
+        } else return false;
+    }
 }
