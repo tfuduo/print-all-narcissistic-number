@@ -12,24 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        int a,b,c;
-        for(int i=100;i<=999;i++){
-            String currentNumStr = i + "";
-            a = pow3(convertChar2Int(currentNumStr,0));
-            b = pow3(convertChar2Int(currentNumStr,1));
-            c = pow3(convertChar2Int(currentNumStr,2));
-            if((a+b+c)==i){
-                System.out.println(i);
-            }
-        }
-    }
-
-    public static int convertChar2Int(String str,int index){
-        return Integer.parseInt(str.charAt(index) + "");
-    }
-
-    public static int pow3(int base){
-        return (int) Math.pow(base,3);
-    }
+    public static void printNarcissisticNumber() {}
 }
