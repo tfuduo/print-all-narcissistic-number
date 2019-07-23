@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
         printNarcissisticNumber();
@@ -14,15 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        for (int i = 100; i < 1000; i++) {
-            int a, b, c;
-            a = i / 100;
-            b = i / 10 % 10;
-            c = i % 10;
-            if(a*a*a + b*b*b + c*c*c == i){
-                System.out.println(i);
-            }
-        }
-    }
+    public static void printNarcissisticNumber() {}
 }
