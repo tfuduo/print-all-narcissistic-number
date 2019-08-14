@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         printNarcissisticNumber();
@@ -14,14 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        ArrayList<Integer>numList= new ArrayList<>();
-        for(int i=100;i<=999;i++){
-            int hundred=i/100;
-            int ten=(i%100)/10;
-            int one=i%10;
-            if(hundred*hundred*hundred+ten*ten*ten+one*one*one==i) numList.add(i);
-        }
-        System.out.println(numList.toString());
-    }
+    public static void printNarcissisticNumber() {}
 }
