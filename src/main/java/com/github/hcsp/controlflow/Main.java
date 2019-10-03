@@ -12,19 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        int start = 100;
-        int end = 999;
-        for (int i = start; i <= end; i++) {
-            int time = 3;
-            int number = i;
-            int result = 0;
-            while (time != 0) {
-                result += Math.pow(number % 10, 3);
-                number /= 10;
-                time--;
-            }
-            if (result == i) System.out.println(result);
-        }
-    }
+    public static void printNarcissisticNumber() {}
 }
