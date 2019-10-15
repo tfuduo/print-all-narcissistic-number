@@ -16,7 +16,6 @@ public class Main {
      */
     public static void printNarcissisticNumber() {
         int a,b,c;
-        System.out.println("水仙花数为：");
         for (int i = 100; i <= 999; i++) {
             a = i / 100;    //取百位数字
             b = i % 100 /10;//取十位数字
