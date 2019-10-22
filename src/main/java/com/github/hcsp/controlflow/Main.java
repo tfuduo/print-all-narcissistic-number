@@ -12,5 +12,23 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        int a, single = 0, ten = 0, hundred = 0;
+        for (int i = 100; i < 1000; i++) {
+            a = i;
+            for (int j = 0; j < 3; j++) {
+                if (j == 0) {
+                    single = a % 10;
+                } else if (j == 1) {
+                    ten = a % 10;
+                } else {
+                    hundred = a % 10;
+                }
+                a = a / 10;
+            }
+            if ((Math.pow(single,3)+Math.pow(ten,3)+Math.pow(hundred,3)) == i) {
+                System.out.println(i + "是一个水仙花数！");
+            }
+        }
+    }
 }
