@@ -12,15 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        for(int i = 100;i <= 999;i++){
-            int hundredsPlace = i/100;
-            int tensPlace = (i-hundredsPlace * 100)/10;
-            int onesPlace = i-hundredsPlace * 100 - tensPlace * 10;
-            int sum = (int) (Math.pow(hundredsPlace,3) + Math.pow(tensPlace,3) + Math.pow(onesPlace,3));
-            if(sum == i){
-                System.out.println(i);
-            }
-        }
-    }
+    public static void printNarcissisticNumber() {}
 }
