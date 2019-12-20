@@ -12,22 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        for(int i = 100; i <= 999; i++){
-            if(i == getSum(i)){
-                System.out.println(i);
-            }
-        }
-    }
-
-    private static int getSum(int num){
-        int sum = 0;
-        while(num > 0){
-            int digit = num % 10;
-            sum += Math.pow(digit, 3);
-            num /= 10;
-        }
-        return sum;
-    }
-
+    public static void printNarcissisticNumber() {}
 }
