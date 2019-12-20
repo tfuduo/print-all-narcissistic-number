@@ -17,7 +17,7 @@ public class Main {
             int digits = i % 10;
             int tens = (i / 10) % 10;
             int hundreds = i / 100;
-            int sum = (int)(Math.pow((double)digits, 3) + Math.pow((double)tens, 3) + Math.pow((double)hundreds, 3));
+            int sum = (int)(Math.pow(digits, 3) + Math.pow(tens, 3) + Math.pow(hundreds, 3));
             if (sum == i) {
                 System.out.println(i);
             }
