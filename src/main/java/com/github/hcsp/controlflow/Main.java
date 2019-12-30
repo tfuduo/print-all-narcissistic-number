@@ -12,5 +12,25 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        for (int i = 100; i < 999; i++) {
+            int testNum = i;
+            int[] decimalBits = new int[3];
+            for (int j = 0; j < 3; j++) {
+                decimalBits[j] = testNum % 10;
+                testNum /= 10;
+            }
+            if (i == SumOfCubes(decimalBits)) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static int SumOfCubes(int... numbers) {
+        int result = 0;
+        for (int number : numbers) {
+            result += number * number * number;
+        }
+        return result;
+    }
 }
