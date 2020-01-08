@@ -23,9 +23,7 @@ public class Main {
     public static boolean Narcissistic(int a) {
         int h = a / 100;
         int s = (a % 100) / 10;
-        int g = (a % 100) % 10;
-        return a == h * h * h + s * s * s + g * g * g;
-
+        int g = a % 10;
+        return a == Math.pow(h, 3) + Math.pow(s, 3) + Math.pow(g, 3);
     }
-
 }
