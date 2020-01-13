@@ -14,10 +14,10 @@ public class Main {
      */
     public static void printNarcissisticNumber() {
         for (int i = 100; i <= 999; i++) {
-            int a = i / 100;
-            int b = (i / 10) % 10;
-            int c = i % 10;
-            if (i == a * a * a + b * b * b + c * c * c) {
+            int 百位数 = i / 100;
+            int 十位数 = (i / 10) % 10;
+            int 个位数 = i % 10;
+            if (i == 百位数 * 百位数 * 百位数 + 十位数 * 十位数 * 十位数 + 个位数 * 个位数 * 个位数) {
                 System.out.println(i);
             }
         }
