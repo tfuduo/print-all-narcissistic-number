@@ -12,21 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        for (int i = 100; i <= 999; i++) {
-            if (i == getThreeFiguresEachDigitCubeSum(i)) {
-                System.out.println(i);
-            }
-        }
-    }
-
-    public static int getThreeFiguresEachDigitCubeSum(int num) {
-        int numEachDigitCubeSum = 0;
-        for (int i = 0; i < 3; i++) {
-            numEachDigitCubeSum += (int) Math.pow(num % 10, 3);
-            num /= 10;
-        }
-
-        return numEachDigitCubeSum;
-    }
+    public static void printNarcissisticNumber() {}
 }
