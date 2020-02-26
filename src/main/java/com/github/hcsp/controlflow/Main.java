@@ -14,7 +14,7 @@ public class Main {
      */
     public static void printNarcissisticNumber() {
         for (int i = 100; i <= 999; i++) {
-            //取几位 （先/几*10）%10  Math.pow
+            //取几位 （先/几*10）%10  Math.pow 1
             int one = i % 10;
             int two = (i / 10) % 10;
             int three = i / 100;
