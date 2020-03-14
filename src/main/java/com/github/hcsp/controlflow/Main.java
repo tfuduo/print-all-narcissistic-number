@@ -1,5 +1,6 @@
 package com.github.hcsp.controlflow;
 
+
 public class Main {
     public static void main(String[] args) {
         printNarcissisticNumber();
@@ -12,5 +13,16 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        String result = "";
+        for (int i = 100; i < 1000; i++) {
+            int a = i / 100;
+            int b = (i / 10) - a * 10;
+            int c = i % 10;
+            if (a*a*a + b*b*b + c*c*c == i) {
+                result += (","+i);
+            }
+        }
+        System.out.println(result.substring(1));
+    }
 }
