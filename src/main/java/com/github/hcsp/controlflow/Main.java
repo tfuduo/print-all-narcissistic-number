@@ -19,7 +19,6 @@ public class Main {
             int c = i % 100 % 10;
             if (i == Math.pow(a, 3) + Math.pow(b, 3) + Math.pow(c, 3))
                 System.out.println(i);
-
         }
     }
 }
