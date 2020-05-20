@@ -19,7 +19,7 @@ public class Main {
         for (int i = 100; i < 1000; i++) {
             result = 0;
             help = 1;
-            for (int j = 1; j <= 3; j++){
+            for (int j = 1; j <= 3; j++) {
                 num = i / help % 10;
                 help *= 10;
                 result += num * num * num;
